@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="hsi.svg">
+   sodipodi:docname="horizontal-situation-indicator_source.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,18 +26,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="1.1609238"
-     inkscape:cy="117.58108"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="167.03817"
+     inkscape:cy="163.84644"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="heading"
      showgrid="true"
      units="px"
-     inkscape:window-width="1920"
+     inkscape:window-width="960"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-x="952"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      showguides="false"
      inkscape:guide-bbox="true"
      scale-x="0.9"
@@ -69,12 +69,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="hsi-base"
+     inkscape:label="Base"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-229.26665)"
@@ -97,75 +97,83 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="hsi-wind-direction"
-     style="display:inline;opacity:1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="hsi-nav1"
-     style="display:inline;opacity:1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="hsi-course" />
-  <g
-     inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="hsi-heading"
+     inkscape:label="Movables"
      style="display:inline">
     <g
-       id="g1215">
+       id="heading"
+       inkscape:label="#heading"
+       style="display:inline">
       <path
-         inkscape:label="#path5242"
+         style="fill:#ff00ff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 29.1038,12.43526 3.9687,-1.3229 v 6.34992 h -0.26458 v -5.82076 l -4.49786,1.3229 5.55618,-8.46656 v 0.52916 z"
+         id="nav1-bearing"
          inkscape:connector-curvature="0"
-         id="hsi-wind-direction"
-         d="M 32.01418,8.46656 33.86624,10.5832 35.7183,8.46656 Z"
-         style="display:inline;opacity:1;fill:#00ffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         sodipodi:nodetypes="ccccccccc" />
       <g
-         inkscape:label="#g966"
-         id="hsi-course"
+         inkscape:label="#nav1-course"
+         id="nav1-course"
          style="display:inline;opacity:1">
-        <circle
-           r="1.1406918"
-           cy="33.866241"
-           cx="19.556988"
-           id="circle5228"
-           style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+        <g
+           id="nav1-deviation"
+           inkscape:label="#nav1-deviation">
+          <rect
+             y="17.99144"
+             x="33.337078"
+             height="31.749599"
+             width="1.05832"
+             id="rect4604"
+             style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.16151254;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="nav1-to"
+             d="m 31.22044,29.63296 2.6458,-1.05832 2.6458,1.05832 -2.6458,-5.55618 z"
+             style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        </g>
         <circle
            r="1.1406918"
            cy="33.866241"
            cx="48.179043"
            id="circle5230"
-           style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
-        <path
-           inkscape:connector-curvature="0"
-           style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:3.80462193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-           d="m 33.86624,5.55618 -3.9687,6.34992 3.43954,-1.3229 v 6.87908 H 34.3954 V 10.5832 l 3.43954,1.3229 z m -0.52916,12.43526 v 6.6145 l 0.52916,-1.05832 0.52916,1.05832 v -6.6145 z m 0.52916,6.08534 -2.6458,5.55618 2.11664,-0.84645 V 49.74104 H 34.3954 V 28.78651 l 2.11664,0.84645 z M 33.33708,50.2702 V 62.1763 H 34.3954 V 50.2702 Z"
-           id="rect5221" />
+           style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
         <circle
-           style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+           style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+           id="circle5232"
+           cx="41.138733"
+           cy="33.866241"
+           r="1.1406918" />
+        <circle
+           style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
            id="path5226"
            cx="26.5973"
            cy="33.866241"
            r="1.1406918" />
         <circle
-           style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-           id="circle5232"
-           cx="41.138733"
+           r="1.1406918"
            cy="33.866241"
-           r="1.1406918" />
+           cx="19.556988"
+           id="circle5228"
+           style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+        <path
+           inkscape:connector-curvature="0"
+           style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:3.80462193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+           d="m 33.86624,5.55618 -3.9687,6.34992 3.43954,-1.3229 v 6.87908 H 34.3954 V 10.5832 l 3.43954,1.3229 z M 33.33708,50.2702 V 62.1763 H 34.3954 V 50.2702 Z"
+           id="nav1-course-pointer"
+           inkscape:label="#nav1-course-pointer"
+           sodipodi:nodetypes="ccccccccccccc" />
       </g>
       <path
-         inkscape:label="#path1041"
+         inkscape:label="#heading-select"
          sodipodi:nodetypes="cccccccc"
          inkscape:connector-curvature="0"
-         id="hsi-course-2"
+         id="heading-select"
          d="M 32.01418,1.3229 H 30.4267 v 2.38122 h 6.879506 L 37.30578,1.3229 H 35.7183 l -1.85206,1.85206 z"
          style="display:inline;opacity:1;fill:#00ffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
-         inkscape:label="#g1500"
-         id="hsi-heading">
+         inkscape:label="#compass-rose"
+         id="compass-rose"
+         style="display:inline">
         <use
            x="0"
            y="0"
@@ -475,7 +483,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="hsi-top"
+     inkscape:label="Top"
      style="display:inline"
      sodipodi:insensitive="true">
     <path
@@ -496,12 +504,6 @@
        id="path987"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
-    <path
-       style="fill:none;stroke:#ff6600;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 33.86624,9.78946 V 3.0284961"
-       id="path954"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 29.63296,1.3229 h 2.38122 L 33.86624,3.17496 35.7183,1.3229 h 2.38122"

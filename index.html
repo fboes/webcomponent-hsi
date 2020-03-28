@@ -9,7 +9,7 @@
       font-family: sans-serif;
     }
     section {
-      width: 180px;
+      width: 200px;
       max-width: 100%;
       float: left;
       padding: 0.5em;
@@ -27,7 +27,7 @@
 
   <section>
     <h4>HSI with NAV1 tuned to ADF</h4>
-    <horizontal-situation-indicator id="nav1-adf" heading="60.0" heading-select="20.0" nav1-bearing="10.0">
+    <horizontal-situation-indicator id="nav1-adf" heading="60.0" heading-select="20.0" nav1-bearing="90.0">
     </horizontal-situation-indicator>
   </section>
 
@@ -39,8 +39,10 @@
 
   <section>
     <h4>HSI with NAV2 tuned to VOR</h4>
-    <horizontal-situation-indicator id="nav1-vor-bearing" heading="25.0" heading-select="40.0" nav1-course="350"
-      nav1-bearing="45" debug="1"></horizontal-situation-indicator>
+    <horizontal-situation-indicator id="nav1-vor-bearing" heading="25.0" heading-select="40.0"
+      nav1-course="0" nav1-bearing="340"
+      nav2-course="90" nav2-bearing="95"
+      debug="1"></horizontal-situation-indicator>
   </section>
   <script>const el = document.getElementById('nav1-vor-bearing');</script>
 </body>
