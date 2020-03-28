@@ -1,0 +1,30 @@
+{
+  "name": "horizontal-situation-indicator",
+  "version": "1.0.0",
+  "description": "A web component which displays a self-contained Horizontal Situation Indicator",
+  "main": "horizontal-situation-indicator.js",
+  "scripts": {
+    "test": "eslint *.js",
+    "serve": "npx browser-sync start --server --files \"*.js, *.html\"",
+    "build": "node dev/build.js"
+  },
+  "keywords": [
+    "web-component"
+  ],
+  "author": "Frank Boës",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.8.0",
+    "eslint-plugin-wc": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:wc/best-practice"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Horizontal Situation Indicator - Web Component Demo</title>
+  <script type="module" src="horizontal-situation-indicator.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    section {
+      width: 180px;
+      max-width: 100%;
+      float: left;
+      padding: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Horizontal Situation Indicator - Web Component Demo</h1>
+
+  <section>
+    <h4>Simple compass without NAV1 &amp; NAV2</h4>
+    <horizontal-situation-indicator id="simple-compass" heading="45.0" heading-select="10.0">
+    </horizontal-situation-indicator>
+  </section>
+
+  <section>
+    <h4>HSI with NAV1 tuned to ADF</h4>
+    <horizontal-situation-indicator id="nav1-adf" heading="60.0" heading-select="20.0" nav1-bearing="10.0">
+    </horizontal-situation-indicator>
+  </section>
+
+  <section>
+    <h4>HSI with NAV2 tuned to VOR</h4>
+    <horizontal-situation-indicator id="nav2-vor" heading="335.0" heading-select="30.0" nav2-course="0.0"
+      nav2-deviation="0.0" nav2-to="-1"></horizontal-situation-indicator>
+  </section>
+
+  <section>
+    <h4>HSI with NAV2 tuned to VOR</h4>
+    <horizontal-situation-indicator id="nav1-vor-bearing" heading="25.0" heading-select="40.0" nav1-course="350"
+      nav1-bearing="45" debug="1"></horizontal-situation-indicator>
+  </section>
+  <script>const el = document.getElementById('nav1-vor-bearing');</script>
+</body>
+</html>

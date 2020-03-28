@@ -1,0 +1,3 @@
+:host { display: inline-block; background: black; color: white; max-width: 100%; }
+:host[hidden] { display: none; }
+:host svg { width: 100%; height: auto; }
