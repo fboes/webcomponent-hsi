@@ -3,6 +3,8 @@ Horizontal Situation Indicator
 
 A [web component](https://www.webcomponents.org/) which displays a self-contained [Horizontal Situation Indicator](https://en.wikipedia.org/wiki/Horizontal_situation_indicator).
 
+![](docs/hsi.png) 
+
 Usage
 -----
 
@@ -73,6 +75,16 @@ Events
 ------
 
 There are no events.
+
+Browser compatibility
+---------------------
+
+See [compatibility chart](https://caniuse.com/#search=web%20components):
+
+* Google Chrome 67+
+* Mozilla Firefox 63+
+* Microsoft Edge 79+
+* Opera 64+
 
 Development
 -----------
