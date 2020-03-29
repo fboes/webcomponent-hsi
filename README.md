@@ -12,35 +12,37 @@ Usage
 
 Loading the library prior to use:
 
+<!--
+```
+<custom-element-demo>
+  <template>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
 ```html
-<html>
-  <head>
-    <script type="module" src="horizontal-situation-indicator.js"></script>
-  </head>
-  <body>
-    <horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
-  </body>
-</html>
-
+  <script type="module" src="horizontal-situation-indicator.js"></script>
+  <horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
 ```
 
-```html
-<h4>Simple compass</h4>
+### Simple compass
 
+```html
 <horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
 ```
 
+### HSI with NAV1 tuned to ADF
+
 ```html
-<h4>HSI with NAV1 tuned to ADF</h4>
 
 <horizontal-situation-indicator heading="45.0" heading-select="0.0"
   nav1-bearing="10.0"></horizontal-situation-indicator>
 ```
 
+### HSI with NAV2 tuned to VOR
 
 ```html
-<h4>HSI with NAV2 tuned to VOR</h4>
-
 <horizontal-situation-indicator heading="45.0" heading-select="0.0"
   nav2-course="0.0" nav2-deviation="0.0" nav2-to="-1"></horizontal-situation-indicator>
 ```
@@ -110,7 +112,6 @@ Development
 Status
 -------
 
-![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/fboes/webcomponent-hsi.svg)
 ![GitHub](https://img.shields.io/github/license/fboes/webcomponent-hsi.svg)
 
 Legal stuff

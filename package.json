@@ -1,5 +1,5 @@
 {
-  "name": "horizontal-situation-indicator",
+  "name": "@fboes/horizontal-situation-indicator",
   "version": "1.0.0",
   "description": "A web component which displays a self-contained Horizontal Situation Indicator",
   "main": "horizontal-situation-indicator.js",
@@ -26,5 +26,17 @@
       "browser": true,
       "es6": true
     }
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fboes/webcomponent-hsi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fboes/webcomponent-hsi/issues"
+  },
+  "homepage": "https://github.com/fboes/webcomponent-hsi#readme"
 }
