@@ -9,7 +9,7 @@ let templateCss = fs.readFileSync(`src/${projectName}.css`).toString()  || proce
 let templateSvg = fs.readFileSync(`src/${projectName}.svg`).toString()  || process.exit(3);
 
 String.prototype.replaceur = function() {
-  return '$1' + this.trim().replace(/`/g, '\\`').replace(/(\s)\s+/gm, '$1') + '$2';
+  return '$1' + this.trim().replace(/`/g, '\\`').replace(/\r+/, "\n").replace(/(\s)\s+/gm, '$1') + '$2';
 };
 
 source = source.replace(/(<style>).*(<\/style>)/ms, templateCss.replaceur());
