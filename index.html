@@ -14,6 +14,17 @@
       float: left;
       padding: 0.5em;
     }
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    input {
+      width: 100%;
+      padding: 0.2em;
+    }
+    footer {
+      clear: both;
+    }
   </style>
 </head>
 <body>
@@ -21,7 +32,7 @@
 
   <section>
     <h4>Simple compass without NAV1 &amp; NAV2</h4>
-    <horizontal-situation-indicator id="simple-compass" heading="45.0" heading-select="10.0">
+    <horizontal-situation-indicator id="simple-compass" heading="60.0" heading-select="30.0">
     </horizontal-situation-indicator>
   </section>
 
@@ -34,26 +45,50 @@
 
   <section>
     <h4>HSI with NAV1 tuned to VOR, NAV2 to ADF</h4>
-    <horizontal-situation-indicator id="nav2-vor" heading="335.0" heading-select="30.0"
-      nav1-course="0.0" nav1-deviation="2.0" nav2-to="-1"
+    <horizontal-situation-indicator id="nav2-vor" heading="60.0" heading-select="30.0"
+      nav1-course="45.0" nav1-deviation="5.0" nav1-to="-1"
       nav2-bearing="90.0">
     </horizontal-situation-indicator>
   </section>
 
   <section>
     <h4>HSI with NAV1 tuned to VOR with bearing</h4>
-    <horizontal-situation-indicator id="nav1-vor" heading="335.0" heading-select="30.0"
-      nav1-course="0.0" nav1-bearing="320.0">
+    <horizontal-situation-indicator id="nav1-vor" heading="60.0" heading-select="30.0"
+      nav1-course="45.0" nav1-bearing="240.0">
     </horizontal-situation-indicator>
   </section>
 
   <section>
     <h4>HSI with NAV1 &amp; NAV2 set to VOR</h4>
-    <horizontal-situation-indicator id="nav1-vor-deviation" heading="25.0" heading-select="29.0"
-      nav1-course="25" nav1-deviation="-5"
+    <horizontal-situation-indicator id="nav1-vor-deviation" heading="60.0" heading-select="60.0"
+      nav1-course="30" nav1-deviation="-5"
       nav2-course="90" nav2-deviation="5">
     </horizontal-situation-indicator>
   </section>
-  <script>const el = document.getElementById('nav1-vor-deviation');</script>
+
+  <section>
+    <h4>JavaScript Interactivity</h4>
+    <script>const el = document.getElementById('nav1-vor');</script>
+    <label>
+      Heading
+      <input type="range" min="0" max="360" value="60" name="heading" oninput="el[this.name] = this.value;" />
+    </label>
+    <label>
+      Heading Select
+      <input type="range" min="0" max="360" value="30" name="heading-select" oninput="el[this.name] = this.value;" />
+    </label>
+    <label>
+      NAV1 Course
+      <input type="range" min="0" max="360" value="45" name="nav1-course" oninput="el[this.name] = this.value;" />
+    </label>
+    <label>
+      NAV1 Bearing
+      <input type="range" min="0" max="360" value="240" name="nav1-bearing" oninput="el[this.name] = this.value;" />
+    </label>
+  </section>
+
+  <footer>
+    See <a href="https://github.com/fboes/webcomponent-hsi">the GitHub documentation for <code>fboes/webcomponent-hsi</code></a>
+  </footer>
 </body>
 </html>
