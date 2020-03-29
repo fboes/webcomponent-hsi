@@ -1,3 +1,34 @@
-:host { display: inline-block; background: black; color: white; max-width: 100%; }
-:host[hidden] { display: none; }
-:host svg { width: 100%; height: auto; }
+:host {
+  display: inline-block;
+  background: black;
+  color: white;
+  max-width: 100%;
+  --background-color: black;
+  --nav1-color: magenta;
+  --nav2-color: cyan;
+}
+:host[hidden] {
+  display: none;
+}
+svg {
+  width: 100%; height: auto;
+}
+
+#background,
+#lubber {
+  fill: var(--background-color);
+}
+
+#nav1-course-pointer,
+#nav1-deviation,
+#nav1-to,
+#nav1-bearing {
+  fill: var(--nav1-color);
+}
+
+#nav2-course-pointer,
+#nav2-deviation,
+#nav2-to,
+#nav2-bearing {
+  fill: var(--nav2-color);
+}

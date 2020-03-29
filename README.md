@@ -76,6 +76,17 @@ Events
 
 There are no events.
 
+Styling
+-------
+
+```css
+horizontal-situation-indicator {
+  --background-color: black;
+  --nav1-color: magenta;
+  --nav2-color: cyan;
+}
+```
+
 Browser compatibility
 ---------------------
 

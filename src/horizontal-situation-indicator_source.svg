@@ -37,7 +37,7 @@
      inkscape:window-height="1017"
      inkscape:window-x="952"
      inkscape:window-y="-8"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
      scale-x="0.9"
@@ -74,15 +74,15 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Base"
+     inkscape:label="Baseplate"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-229.26665)"
      style="display:inline"
      sodipodi:insensitive="true">
     <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-       id="hsi-base"
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="background"
        width="67.73333"
        height="67.73333"
        x="0"
@@ -95,11 +95,6 @@
        cy="263.1329"
        r="17.39535" />
   </g>
-  <path
-     inkscape:connector-curvature="0"
-     id="nav2-bearing"
-     d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
-     style="fill:#00ffff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -109,6 +104,11 @@
        id="heading"
        inkscape:label="#heading"
        style="display:inline">
+      <path
+         inkscape:connector-curvature="0"
+         id="nav2-bearing"
+         d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
+         style="fill:#00ffff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
          style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001"
          id="nav2-course"
@@ -158,7 +158,7 @@
         <path
            sodipodi:nodetypes="ccccccccccccc"
            inkscape:label="#nav2-course-pointer"
-           id="path4770"
+           id="nav2-course-pointer"
            d="m 33.86624,5.55618 -3.9687,6.34992 3.43954,-1.3229 v 6.87908 H 34.3954 V 10.5832 l 3.43954,1.3229 z M 33.33708,50.2702 V 62.1763 H 34.3954 V 50.2702 Z"
            style="display:inline;opacity:1;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
            inkscape:connector-curvature="0" />
@@ -546,7 +546,7 @@
      style="display:inline">
     <path
        inkscape:connector-curvature="0"
-       id="path1021"
+       id="plane"
        d="m 36.24746,38.62868 v -0.52916 l -1.85206,-1.58748 0.26458,-2.11664 3.43954,1.05832 V 34.3954 l -3.43954,-2.6458 v -1.58748 l -0.52916,-1.58748 h -0.265006 8.52e-4 -0.265006 l -0.52916,1.58748 v 1.58748 l -3.43954,2.6458 v 1.05832 l 3.43954,-1.05832 0.26458,2.11664 -1.85206,1.58748 v 0.52916 l 2.38122,-0.52916 z"
        style="fill:#ffffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        sodipodi:nodetypes="cccccccccccccccccccccc"
@@ -560,11 +560,12 @@
     <path
        style="fill:#000000;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 29.63296,0 v 1.3229 h 2.38122 L 33.86624,3.17496 35.7183,1.3229 h 2.38122 V 0 Z"
-       id="path987"
+       id="lubber"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccc" />
+       sodipodi:nodetypes="cccccccc"
+       inkscape:label="#lubber" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:0.39687;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#ffffff;stroke-width:0.39686999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 29.63296,1.3229 h 2.38122 L 33.86624,3.17496 35.7183,1.3229 h 2.38122"
        id="path952"
        inkscape:connector-curvature="0"
