@@ -2,8 +2,6 @@ const template = document.createElement('template');
 template.innerHTML = `
 <style>:host {
 display: inline-block;
-background: black;
-color: white;
 max-width: 100%;
 --background-color: black;
 --nav1-color: magenta;

@@ -3,7 +3,9 @@ Horizontal Situation Indicator
 
 A [web component](https://www.webcomponents.org/) which displays a self-contained [Horizontal Situation Indicator](https://en.wikipedia.org/wiki/Horizontal_situation_indicator).
 
-![](docs/hsi.png) 
+![](docs/hsi.png)
+
+For a demo see https://3960.org/webcomponent-hsi/.
 
 Usage
 -----
@@ -45,6 +47,8 @@ Loading the library prior to use:
 
 Properties
 ----------
+
+Properties can be set on initialization via HTML attributes, or select the DOM node via JavaScript and setting the properties of the DOM node.
 
 | Name                   | Type        | Default | Description                |
 | ----------------       | ----------- | ------- | -------------------------- |
@@ -102,6 +106,12 @@ Development
 
 * Run `npm run build` to copy files from `src` directory into main JavaScript file.
 * Run `npm run serve` to launch a development web server.
+
+Status
+-------
+
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/fboes/webcomponent-hsi.svg)
+![GitHub](https://img.shields.io/github/license/fboes/webcomponent-hsi.svg)
 
 Legal stuff
 -----------
