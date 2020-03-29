@@ -7,6 +7,19 @@ A [web component](https://www.webcomponents.org/) which displays a self-containe
 
 For a demo see https://3960.org/webcomponent-hsi/.
 
+Installation
+------------
+
+Either download the [`horizontal-situation-indicator.js`](horizontal-situation-indicator.js) to a sensible location in your web project, or do a NPM installation:
+
+```bash
+npm install @fboes/horizontal-situation-indicator --save
+```
+
+Everything required for the frontend functionality of this web component is contained in [`horizontal-situation-indicator.js`](horizontal-situation-indicator.js).
+
+---
+
 Usage
 -----
 
@@ -22,8 +35,11 @@ Loading the library prior to use:
 ```
 -->
 ```html
-  <script type="module" src="horizontal-situation-indicator.js"></script>
-  <horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
+<!-- load element -->
+<script type="module" src="horizontal-situation-indicator.js"></script>
+
+<!-- use element -->
+<horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
 ```
 
 ### Simple compass
@@ -102,6 +118,10 @@ See [compatibility chart](https://caniuse.com/#search=web%20components):
 * Mozilla Firefox 63+
 * Microsoft Edge 79+
 * Opera 64+
+
+If you need extended compatibility, search for [Web Components Polyfills](https://www.webcomponents.org/polyfills/).
+
+---
 
 Development
 -----------
