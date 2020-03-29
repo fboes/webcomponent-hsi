@@ -112,6 +112,7 @@ Development
 Status
 -------
 
+[![npm version](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator.svg)](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator)
 ![GitHub](https://img.shields.io/github/license/fboes/webcomponent-hsi.svg)
 
 Legal stuff
