@@ -187,10 +187,6 @@ class HorizontalSituationIndicator extends HTMLElement {
         this._elements[attrName].setAttribute('display', 'none');
       }
     });
-
-    ['nav1', 'nav2'].forEach((source) => {
-      this._calculateDeviation(source);
-    });
   }
 
   attributeChangedCallback(attrName, oldValue, newValue) {
@@ -234,6 +230,9 @@ class HorizontalSituationIndicator extends HTMLElement {
   }
 
   connectedCallback() {
+    ['nav1', 'nav2'].forEach((source) => {
+      this._calculateDeviation(source);
+    });
   }
 
   disconnectedCallback() {
