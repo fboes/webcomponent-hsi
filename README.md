@@ -1,7 +1,7 @@
 Horizontal Situation Indicator
 ==============================
 
-A [web component](https://www.webcomponents.org/) which displays a self-contained [Horizontal Situation Indicator](https://en.wikipedia.org/wiki/Horizontal_situation_indicator).
+A Vanilla JavaScript [web component](https://www.webcomponents.org/) which displays a self-contained [Horizontal Situation Indicator](https://en.wikipedia.org/wiki/Horizontal_situation_indicator).
 
 ![](docs/hsi.png)
 
@@ -25,22 +25,28 @@ Usage
 
 Loading the library prior to use:
 
+```html
+<!-- load element library -->
+<script type="module" src="https://unpkg.com/@fboes/horizontal-situation-indicator@latest/horizontal-situation-indicator.js?module"></script>
+```
+
+Invoke a new instance by placing this into your HTML source code
+
+```html
+<!-- use element -->
+<horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
+```
+
 <!--
 ```
 <custom-element-demo>
   <template>
+    <script type="module" src="https://unpkg.com/@fboes/horizontal-situation-indicator@latest/horizontal-situation-indicator.js?module"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
-```html
-<!-- load element -->
-<script type="module" src="horizontal-situation-indicator.js"></script>
-
-<!-- use element -->
-<horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
-```
 
 ### Simple compass
 
@@ -66,27 +72,31 @@ Loading the library prior to use:
 Properties
 ----------
 
-Properties can be set on initialization via HTML attributes, or select the DOM node via JavaScript and setting the properties of the DOM node.
+Properties can be set on initialization via HTML attributes, or selecting the DOM node via JavaScript and setting the properties of the DOM node.
 
-| Name                   | Type        | Default | Description                |
-| ----------------       | ----------- | ------- | -------------------------- |
-| `heading`              | `degree`    | `null`  |                            |
-| `heading-select`       | `degree`    | `null`  |                            |
-| `nav1-course`          | `degree`    | `null`  | Hidden if `null`.          |
-| `nav1-deviation`       | `deviation` | `null`  | Only visible when `nav1-course` is set. |
-| `nav1-bearing`         | `degree`    | `null`  | This will also set `nav1-to` and `nav1-deviation` accordingly. |
-| `nav1-to`              | `switch`    | `null`  | If set to `1` will show the TO-flag, if set to `-1` will show the FROM-flag. |
-| `nav2-course`          | `degree`    | `null`  |                            |
-| `nav2-deviation`       | `deviation` | `null`  | Only visible when `nav2-course` is set. |
-| `nav2-bearing`         | `degree`    | `null`  | This will also set `nav2-to` and `nav2-deviation` accordingly. |
-| `nav2-to`              | `switch`    | `null`  | If set to `1` will show the TO-flag, if set to `-1` will show the FROM-flag. |
+If a property is not set or unset, the corresponding HSI component will be hidden.
+
+| Name                   | Type         | Default | Description                |
+| ----------------       | ------------ | ------- | -------------------------- |
+| `heading`              | ?`degree`    | `null`  |                            |
+| `heading-select`       | ?`degree`    | `null`  |                            |
+| `nav1-course`          | ?`degree`    | `null`  |                            |
+| `nav1-deviation`       | ?`deviation` | `null`  | Only visible when `nav1-course` is set. |
+| `nav1-bearing`         | ?`degree`    | `null`  | This will also set `nav1-to` and `nav1-deviation` accordingly. |
+| `nav1-to`              | ?`switch`    | `null`  | If set to `1` will show the TO-flag, if set to `-1` will show the FROM-flag. |
+| `nav2-course`          | ?`degree`    | `null`  |                            |
+| `nav2-deviation`       | ?`deviation` | `null`  | Only visible when `nav2-course` is set. |
+| `nav2-bearing`         | ?`degree`    | `null`  | This will also set `nav2-to` and `nav2-deviation` accordingly. |
+| `nav2-to`              | ?`switch`    | `null`  | If set to `1` will show the TO-flag, if set to `-1` will show the FROM-flag. |
+
+Types prefixed with `?` allow setting value to `null` as well.
 
 Special types:
 
 | Type        | Description |
 | ----------- | ----------- |
-| `degree`    | A float number with 0 ≥ `degree` > 360. `degree` less or greater than this value will be converted to a corresponding value in this range, e.g. `-1.0` will be `359.0`. |
-| `deviation` | A float number with `deviation` > 0 showing the the chosen course to be right / above, `deviation` < 0  showing the the chosen course to be left / below. A value of `5.0` will move the marker to the first dot, a value of `10.0` will move the marker to the second dot. Values out of range will be capped to the range. |
+| `degree`    | A float number with 0 ≤ `degree` < 360. `degree` out of this range will be converted to a corresponding value in this range, e.g. `-1.0` will be `359.0`. |
+| `deviation` | A float number with -180 ≤ `deviation` < 180. `deviation` out of this range will be converted to a corresponding value in this range. `deviation` > 0 showing the the chosen course to be right / above, `deviation` < 0  showing the the chosen course to be left / below. A value of `±5.0` (`±175`) will move the marker to the first dot, a value of `±10.0` (`±170`) will move the marker to the second dot. |
 
 Methods
 -------
@@ -133,7 +143,8 @@ Status
 -------
 
 [![npm version](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator.svg)](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator)
-![GitHub](https://img.shields.io/github/license/fboes/webcomponent-hsi.svg)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@fboes/horizontal-situation-indicator)
+![MIT license](https://img.shields.io/github/license/fboes/webcomponent-hsi.svg)
 
 Legal stuff
 -----------

@@ -1,7 +1,7 @@
 {
   "name": "@fboes/horizontal-situation-indicator",
   "version": "1.0.2",
-  "description": "A web component which displays a self-contained Horizontal Situation Indicator",
+  "description": "A Vanilla JavaScript web component which displays a self-contained Horizontal Situation Indicator",
   "main": "horizontal-situation-indicator.js",
   "scripts": {
     "test": "eslint *.js",
