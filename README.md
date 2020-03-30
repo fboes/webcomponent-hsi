@@ -27,10 +27,10 @@ Loading the library prior to use:
 
 ```html
 <!-- load element library -->
-<script type="module" src="https://unpkg.com/@fboes/horizontal-situation-indicator@latest/horizontal-situation-indicator.js?module"></script>
+<script type="module" src="horizontal-situation-indicator.js"></script>
 ```
 
-Invoke a new instance by placing this into your HTML source code
+Invoke a new instance by placing this into your HTML source code:
 
 ```html
 <!-- use element -->
