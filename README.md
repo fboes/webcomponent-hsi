@@ -114,6 +114,8 @@ Styling
 ```css
 horizontal-situation-indicator {
   --background-color: black;
+  --foreground-color: white;
+  --lubber-color: #ff6600;
   --nav1-color: magenta;
   --nav2-color: cyan;
 }

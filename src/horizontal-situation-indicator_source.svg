@@ -26,16 +26,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="133.98438"
-     inkscape:cy="186.2722"
+     inkscape:zoom="16"
+     inkscape:cx="133.27256"
+     inkscape:cy="237.05426"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="true"
      units="px"
-     inkscape:window-width="960"
+     inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="952"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="false"
@@ -558,16 +558,24 @@
        inkscape:connector-curvature="0"
        inkscape:transform-center-x="-32.940554" />
     <path
-       style="fill:#000000;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:#000000;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 29.63296,0 v 1.3229 h 2.38122 L 33.86624,3.17496 35.7183,1.3229 h 2.38122 V 0 Z"
-       id="lubber"
+       id="chevron"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc"
+       inkscape:label="#chevron" />
+    <rect
+       style="display:inline;opacity:1;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.45826596;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="lubber"
+       width="0.52916002"
+       height="5.2915993"
+       x="33.601662"
+       y="3.1749599"
        inkscape:label="#lubber" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:0.39686999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 29.63296,1.3229 h 2.38122 L 33.86624,3.17496 35.7183,1.3229 h 2.38122"
-       id="path952"
+       id="chevron-line"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <use

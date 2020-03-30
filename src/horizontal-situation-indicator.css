@@ -2,6 +2,8 @@
   display: inline-block;
   max-width: 100%;
   --background-color: black;
+  --foreground-color: white;
+  --lubber-color: #ff6600;
   --nav1-color: magenta;
   --nav2-color: cyan;
 }
@@ -12,21 +14,37 @@ svg {
   width: 100%; height: auto;
 }
 
+* {
+  fill: var(--foreground-color);
+}
+
+circle, #chevron-line {
+  fill: none;
+}
+
 #background,
-#lubber {
+#chevron {
   fill: var(--background-color);
 }
 
+#lubber {
+  fill: var(--lubber-color);
+}
+
 #nav1-course-pointer,
-#nav1-deviation,
-#nav1-to,
+#nav1-deviation *,
 #nav1-bearing {
   fill: var(--nav1-color);
+  stroke: var(--background-color);
 }
 
 #nav2-course-pointer,
-#nav2-deviation,
-#nav2-to,
+#nav2-deviation *,
 #nav2-bearing {
+  fill: var(--nav2-color);
+  stroke: var(--background-color);
+}
+
+#heading-select {
   fill: var(--nav2-color);
 }

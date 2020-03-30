@@ -4,6 +4,8 @@ template.innerHTML = `
 display: inline-block;
 max-width: 100%;
 --background-color: black;
+--foreground-color: white;
+--lubber-color: #ff6600;
 --nav1-color: magenta;
 --nav2-color: cyan;
 }
@@ -13,20 +15,32 @@ display: none;
 svg {
 width: 100%; height: auto;
 }
+* {
+fill: var(--foreground-color);
+}
+circle, #chevron-line {
+fill: none;
+}
 #background,
-#lubber {
+#chevron {
 fill: var(--background-color);
 }
+#lubber {
+fill: var(--lubber-color);
+}
 #nav1-course-pointer,
-#nav1-deviation,
-#nav1-to,
+#nav1-deviation *,
 #nav1-bearing {
 fill: var(--nav1-color);
+stroke: var(--background-color);
 }
 #nav2-course-pointer,
-#nav2-deviation,
-#nav2-to,
+#nav2-deviation *,
 #nav2-bearing {
+fill: var(--nav2-color);
+stroke: var(--background-color);
+}
+#heading-select {
 fill: var(--nav2-color);
 }</style><svg width="256" height="256" version="1.1" viewBox="0 0 67.732 67.732" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g transform="translate(0 -229.27)">
@@ -106,8 +120,9 @@ fill: var(--nav2-color);
 <g>
 <path id="plane" d="m36.247 38.629v-0.52916l-1.8521-1.5875 0.26458-2.1166 3.4395 1.0583v-1.0583l-3.4395-2.6458v-1.5875l-0.52916-1.5875h-0.26501 8.52e-4 -0.26501l-0.52916 1.5875v1.5875l-3.4395 2.6458v1.0583l3.4395-1.0583 0.26458 2.1166-1.8521 1.5875v0.52916l2.3812-0.52916z" fill="#fff"/>
 <path id="path968" d="m65.88 33.866h1.8521" fill="none" stroke="#fff" stroke-width=".49999"/>
-<path id="lubber" d="m29.633 0v1.3229h2.3812l1.8521 1.8521 1.8521-1.8521h2.3812v-1.3229z"/>
-<path d="m29.633 1.3229h2.3812l1.8521 1.8521 1.8521-1.8521h2.3812" fill="none" stroke="#fff" stroke-width=".39687"/>
+<path id="chevron" d="m29.633 0v1.3229h2.3812l1.8521 1.8521 1.8521-1.8521h2.3812v-1.3229z"/>
+<rect id="lubber" x="33.602" y="3.175" width=".52916" height="5.2916" fill="#f60" style="paint-order:normal"/>
+<path id="chevron-line" d="m29.633 1.3229h2.3812l1.8521 1.8521 1.8521-1.8521h2.3812" fill="none" stroke="#fff" stroke-width=".39687"/>
 <use id="use970" transform="rotate(-45 33.866 33.866)" width="100%" height="100%" xlink:href="#path968"/>
 <use id="use972" transform="rotate(-90 33.866 33.866)" width="100%" height="100%" xlink:href="#use970"/>
 <use id="use974" transform="rotate(-45 33.866 33.866)" width="100%" height="100%" xlink:href="#use972"/>
