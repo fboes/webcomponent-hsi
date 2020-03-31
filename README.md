@@ -16,6 +16,12 @@ Either download the [`horizontal-situation-indicator.js`](horizontal-situation-i
 npm install @fboes/horizontal-situation-indicator --save
 ```
 
+Instead of a local installation you may also load the library from https://unpkg.com/. Beware: This makes https://unpkg.com/ a dependency of your project and may pose data protection issues.
+
+```html
+<script type="module" src="https://unpkg.com/@fboes/horizontal-situation-indicator@latest/horizontal-situation-indicator.js"></script>
+```
+
 Everything required for the frontend functionality of this web component is contained in [`horizontal-situation-indicator.js`](horizontal-situation-indicator.js).
 
 ---
@@ -32,21 +38,20 @@ Loading the library prior to use:
 
 Invoke a new instance by placing this into your HTML source code:
 
-```html
-<!-- use element -->
-<horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
-```
-
 <!--
 ```
 <custom-element-demo>
   <template>
-    <script type="module" src="https://unpkg.com/@fboes/horizontal-situation-indicator@latest/horizontal-situation-indicator.js?module"></script>
+    <script type="module" src="https://unpkg.com/@fboes/horizontal-situation-indicator@latest/horizontal-situation-indicator.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
+```html
+<!-- use element -->
+<horizontal-situation-indicator heading="45.0" heading-select="0.0"></horizontal-situation-indicator>
+```
 
 ### Simple compass
 
@@ -111,11 +116,14 @@ There are no events.
 Styling
 -------
 
+To change the layout of the HSI component use CSS variables. There is a set of defined CSS variables which you may use:
+
 ```css
 horizontal-situation-indicator {
   --background-color: black;
   --foreground-color: white;
-  --lubber-color: #ff6600;
+  --lubber-color: darkorange;
+  --heading-select-color: cyan;
   --nav1-color: magenta;
   --nav2-color: cyan;
 }
@@ -144,6 +152,7 @@ Development
 Status
 -------
 
+[![GitHub version](https://badge.fury.io/gh/fboes%2Fwebcomponent-hsi.svg)](https://badge.fury.io/gh/fboes%2Fwebcomponent-hsi)
 [![npm version](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator.svg)](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@fboes/horizontal-situation-indicator)
 ![MIT license](https://img.shields.io/github/license/fboes/webcomponent-hsi.svg)

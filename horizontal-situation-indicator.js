@@ -5,9 +5,10 @@ display: inline-block;
 max-width: 100%;
 --background-color: black;
 --foreground-color: white;
---lubber-color: #ff6600;
+--lubber-color: darkorange;
+--heading-select-color: cyan;
 --nav1-color: magenta;
---nav2-color: cyan;
+--nav2-color: green;
 }
 :host[hidden] {
 display: none;
@@ -41,7 +42,7 @@ fill: var(--nav2-color);
 stroke: var(--background-color);
 }
 #heading-select {
-fill: var(--nav2-color);
+fill: var(--heading-select-color);
 }</style><svg width="256" height="256" version="1.1" viewBox="0 0 67.732 67.732" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g transform="translate(0 -229.27)">
 <rect id="background" y="229.27" width="67.733" height="67.733" style="paint-order:stroke fill markers"/>

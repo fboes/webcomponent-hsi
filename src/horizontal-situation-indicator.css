@@ -3,7 +3,8 @@
   max-width: 100%;
   --background-color: black;
   --foreground-color: white;
-  --lubber-color: #ff6600;
+  --lubber-color: darkorange;
+  --heading-select-color: cyan;
   --nav1-color: magenta;
   --nav2-color: cyan;
 }
@@ -46,5 +47,5 @@ circle, #chevron-line {
 }
 
 #heading-select {
-  fill: var(--nav2-color);
+  fill: var(--heading-select-color);
 }
