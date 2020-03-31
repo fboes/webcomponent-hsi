@@ -226,8 +226,17 @@ class HorizontalSituationIndicator extends HTMLElement {
         let translate = this[attrName];
         if (translate < -90) { translate += 180; translate *= -1; }
         else if (translate > +90) { translate -= 180; translate *= -1; }
-        translate = Math.max(-10, Math.min(10, translate)) * -1.45;
-        el.setAttribute('transform','translate(' + translate + ' 0)');
+        translate = Math.max(-10, Math.min(10, translate));
+        el.setAttribute('transform','translate(' + (translate * -1.45) + ' 0)');
+
+        translate = Math.abs(translate);
+        if (this[matches[1] + '-bearing'] !== null) {
+          if (translate < 10) {
+            this._elements[matches[1] + '-bearing'].setAttribute('opacity', translate / 10);
+          } else {
+            this._elements[matches[1] + '-bearing'].removeAttribute('opacity');
+          }
+        }
         break;
       case 'to':
         rotate = this[attrName] > 0 ? 0 : 180;
