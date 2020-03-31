@@ -8,7 +8,7 @@ max-width: 100%;
 --lubber-color: darkorange;
 --heading-select-color: cyan;
 --nav1-color: magenta;
---nav2-color: green;
+--nav2-color: cyan;
 }
 :host[hidden] {
 display: none;
