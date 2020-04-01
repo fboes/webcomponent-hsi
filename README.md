@@ -154,6 +154,7 @@ Development
 Status
 -------
 
+[![Build Status](https://travis-ci.org/fboes/webcomponent-hsi.svg?branch=master)](https://travis-ci.org/fboes/webcomponent-hsi)
 [![GitHub version](https://badge.fury.io/gh/fboes%2Fwebcomponent-hsi.svg)](https://badge.fury.io/gh/fboes%2Fwebcomponent-hsi)
 [![npm version](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator.svg)](https://badge.fury.io/js/%40fboes%2Fhorizontal-situation-indicator)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@fboes/horizontal-situation-indicator)
