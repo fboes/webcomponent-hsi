@@ -85,10 +85,12 @@ If a property is not set or unset, the corresponding HSI component will be hidde
 | ----------------       | ------------ | ------- | -------------------------- |
 | `heading`              | ?`degree`    | `null`  |                            |
 | `heading-select`       | ?`degree`    | `null`  |                            |
+| `nav1-label`           | ?`string`    | `null`  |                            |
 | `nav1-course`          | ?`degree`    | `null`  |                            |
 | `nav1-deviation`       | ?`deviation` | `null`  | Only visible when `nav1-course` is set. |
 | `nav1-bearing`         | ?`degree`    | `null`  | This will also set `nav1-to` and `nav1-deviation` accordingly. |
 | `nav1-to`              | ?`switch`    | `null`  | If set to `1` will show the TO-flag, if set to `-1` will show the FROM-flag. |
+| `nav2-label`           | ?`string`    | `null`  |                            |
 | `nav2-course`          | ?`degree`    | `null`  |                            |
 | `nav2-deviation`       | ?`deviation` | `null`  | Only visible when `nav2-course` is set. |
 | `nav2-bearing`         | ?`degree`    | `null`  | This will also set `nav2-to` and `nav2-deviation` accordingly. |

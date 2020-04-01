@@ -32,6 +32,9 @@ circle, #chevron-line {
   fill: var(--lubber-color);
 }
 
+#nav1-label tspan {
+  fill: var(--nav1-color);
+}
 #nav1-course-pointer,
 #nav1-deviation *,
 #nav1-bearing {
@@ -39,6 +42,9 @@ circle, #chevron-line {
   stroke: var(--background-color);
 }
 
+#nav2-label tspan {
+  fill: var(--nav2-color);
+}
 #nav2-course-pointer,
 #nav2-deviation *,
 #nav2-bearing {

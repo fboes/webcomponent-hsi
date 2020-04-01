@@ -29,11 +29,17 @@ fill: var(--background-color);
 #lubber {
 fill: var(--lubber-color);
 }
+#nav1-label tspan {
+fill: var(--nav1-color);
+}
 #nav1-course-pointer,
 #nav1-deviation *,
 #nav1-bearing {
 fill: var(--nav1-color);
 stroke: var(--background-color);
+}
+#nav2-label tspan {
+fill: var(--nav2-color);
 }
 #nav2-course-pointer,
 #nav2-deviation *,
@@ -130,6 +136,8 @@ fill: var(--heading-select-color);
 <use id="use976" transform="rotate(-45 33.866 33.866)" width="100%" height="100%" xlink:href="#use974"/>
 <use id="use978" transform="rotate(-90 33.866 33.866)" width="100%" height="100%" xlink:href="#use976"/>
 <use transform="rotate(45 33.866 33.866)" width="100%" height="100%" xlink:href="#use978"/>
+<text id="nav1-label" x="1.7363065" y="5.2254548" fill="#000000" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="1.7363065" y="5.2254548" fill="#ff00ff" font-family="sans-serif" font-weight="bold" stroke-width=".26458">NAV1</tspan></text>
+<text id="nav2-label" x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">NAV2</tspan></text>
 </g>
 </svg>`;
 
@@ -139,10 +147,12 @@ class HorizontalSituationIndicator extends HTMLElement {
       'debug',
       'heading',
       'heading-select',
+      'nav1-label',
       'nav1-course',
       'nav1-deviation',
       'nav1-bearing',
       'nav1-to',
+      'nav2-label',
       'nav2-course',
       'nav2-deviation',
       'nav2-bearing',
@@ -176,7 +186,10 @@ class HorizontalSituationIndicator extends HTMLElement {
 
       Object.defineProperty(this, attrName, {
         get() {
-          return (this.hasAttribute(attrName)) ? Number(this.getAttribute(attrName)) : null;
+          if (!this.hasAttribute(attrName)) {
+            return null;
+          }
+          return (matches[2] !== 'label') ? Number(this.getAttribute(attrName)) : this.getAttribute(attrName);
         },
         set(attrValue) {
           if (attrValue !== null && attrValue !== undefined) {
@@ -223,6 +236,9 @@ class HorizontalSituationIndicator extends HTMLElement {
 
     let rotate = null;
     switch (matches[2]) {
+      case 'label':
+        el.querySelector('tspan').textContent = this[attrName];
+        break;
       case 'deviation':
         let translate = this[attrName];
         if (translate < -90) { translate += 180; translate *= -1; }
