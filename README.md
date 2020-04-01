@@ -1,7 +1,7 @@
 Horizontal Situation Indicator
 ==============================
 
-A Vanilla JavaScript [web component](https://www.webcomponents.org/) which displays a self-contained [Horizontal Situation Indicator](https://en.wikipedia.org/wiki/Horizontal_situation_indicator).
+A Vanilla JavaScript [web component](https://www.webcomponents.org/) which displays a self-contained [Horizontal Situation Indicator](https://en.wikipedia.org/wiki/Horizontal_situation_indicator), an airplane cockpit instrument used for instrument navigation.
 
 ![](docs/hsi.png)
 
