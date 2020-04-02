@@ -7,6 +7,7 @@
   --heading-select-color: cyan;
   --nav1-color: magenta;
   --nav2-color: cyan;
+  --stroke-width: 0.5;
 }
 :host[hidden] {
   display: none;
@@ -23,13 +24,22 @@ circle, #chevron-line {
   fill: none;
 }
 
+#top *,
+#baseplate * {
+  stroke-width: var(--stroke-width);
+}
+
 #background,
 #chevron {
   fill: var(--background-color);
 }
 
 #lubber {
-  fill: var(--lubber-color);
+  stroke: var(--lubber-color);
+}
+
+#heading-select {
+  fill: var(--heading-select-color);
 }
 
 #nav1-label tspan {
@@ -52,6 +62,3 @@ circle, #chevron-line {
   stroke: var(--background-color);
 }
 
-#heading-select {
-  fill: var(--heading-select-color);
-}

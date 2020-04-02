@@ -3,6 +3,7 @@ Changelog
 
 * Add `nav1-label` / `nav2-label`
 * Add `.travis.yml`
+* Add CSS property `--stroke-width`
 
 1.1.1
 -----

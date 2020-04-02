@@ -128,6 +128,7 @@ horizontal-situation-indicator {
   --heading-select-color: cyan;
   --nav1-color: magenta;
   --nav2-color: cyan;
+  --stroke-width: 0.5;
 }
 ```
 

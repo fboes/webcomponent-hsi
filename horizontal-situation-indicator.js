@@ -9,6 +9,7 @@ max-width: 100%;
 --heading-select-color: cyan;
 --nav1-color: magenta;
 --nav2-color: cyan;
+--stroke-width: 0.5;
 }
 :host[hidden] {
 display: none;
@@ -22,12 +23,19 @@ fill: var(--foreground-color);
 circle, #chevron-line {
 fill: none;
 }
+#top *,
+#baseplate * {
+stroke-width: var(--stroke-width);
+}
 #background,
 #chevron {
 fill: var(--background-color);
 }
 #lubber {
-fill: var(--lubber-color);
+stroke: var(--lubber-color);
+}
+#heading-select {
+fill: var(--heading-select-color);
 }
 #nav1-label tspan {
 fill: var(--nav1-color);
@@ -46,13 +54,12 @@ fill: var(--nav2-color);
 #nav2-bearing {
 fill: var(--nav2-color);
 stroke: var(--background-color);
-}
-#heading-select {
-fill: var(--heading-select-color);
 }</style><svg width="256" height="256" version="1.1" viewBox="0 0 67.732 67.732" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g transform="translate(0 -229.27)">
+<g id="baseplate">
 <rect id="background" y="229.27" width="67.733" height="67.733" style="paint-order:stroke fill markers"/>
 <circle cx="33.866" cy="263.13" r="17.395" fill="none" stroke="#fff" stroke-width=".74999" style="paint-order:stroke fill markers"/>
+</g>
 </g>
 <g>
 <g id="heading">
@@ -125,10 +132,11 @@ fill: var(--heading-select-color);
 </g>
 </g>
 <g>
+<g id="top">
 <path id="plane" d="m36.247 38.629v-0.52916l-1.8521-1.5875 0.26458-2.1166 3.4395 1.0583v-1.0583l-3.4395-2.6458v-1.5875l-0.52916-1.5875h-0.26501 8.52e-4 -0.26501l-0.52916 1.5875v1.5875l-3.4395 2.6458v1.0583l3.4395-1.0583 0.26458 2.1166-1.8521 1.5875v0.52916l2.3812-0.52916z" fill="#fff"/>
 <path id="path968" d="m65.88 33.866h1.8521" fill="none" stroke="#fff" stroke-width=".49999"/>
 <path id="chevron" d="m29.633 0v1.3229h2.3812l1.8521 1.8521 1.8521-1.8521h2.3812v-1.3229z"/>
-<rect id="lubber" x="33.602" y="3.175" width=".52916" height="5.2916" fill="#f60" style="paint-order:normal"/>
+<path id="lubber" d="m33.866 3.175v5.2916" fill="#f60" stroke="#ff7f2a" stroke-width=".49999"/>
 <path id="chevron-line" d="m29.633 1.3229h2.3812l1.8521 1.8521 1.8521-1.8521h2.3812" fill="none" stroke="#fff" stroke-width=".39687"/>
 <use id="use970" transform="rotate(-45 33.866 33.866)" width="100%" height="100%" xlink:href="#path968"/>
 <use id="use972" transform="rotate(-90 33.866 33.866)" width="100%" height="100%" xlink:href="#use970"/>
@@ -138,6 +146,7 @@ fill: var(--heading-select-color);
 <use transform="rotate(45 33.866 33.866)" width="100%" height="100%" xlink:href="#use978"/>
 <text id="nav1-label" x="1.7363065" y="5.2254548" fill="#000000" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="1.7363065" y="5.2254548" fill="#ff00ff" font-family="sans-serif" font-weight="bold" stroke-width=".26458">NAV1</tspan></text>
 <text id="nav2-label" x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">NAV2</tspan></text>
+</g>
 </g>
 </svg>`;
 
