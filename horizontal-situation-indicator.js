@@ -23,8 +23,7 @@ fill: var(--foreground-color);
 circle, #chevron-line {
 fill: none;
 }
-#top *,
-#baseplate * {
+*[stroke] {
 stroke-width: var(--stroke-width);
 }
 #background,
@@ -64,11 +63,11 @@ stroke: var(--background-color);
 <g>
 <g id="heading">
 <g stroke="#000">
-<path id="nav2-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#0ff" stroke-width=".26458px"/>
-<g id="nav2-course">
-<g id="nav2-deviation" fill="#0ff" stroke="#000" stroke-width=".26458">
+<path id="nav2-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#0ff" stroke-width=".26458px" style="paint-order:stroke fill markers"/>
+<g id="nav2-course" style="paint-order:stroke fill markers">
+<g id="nav2-deviation" fill="#0ff" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers">
 <rect x="33.337" y="17.991" width="1.0583" height="31.75" style="paint-order:stroke fill markers"/>
-<path id="nav2-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" style="paint-order:normal"/>
+<path id="nav2-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" style="paint-order:stroke fill markers"/>
 </g>
 <g fill="none" stroke="#fff" stroke-width=".52916">
 <circle cx="48.179" cy="33.866" r="1.1407" style="paint-order:stroke fill markers"/>
@@ -78,11 +77,11 @@ stroke: var(--background-color);
 </g>
 <path id="nav2-course-pointer" d="m33.866 5.5562-3.9687 6.3499 3.4395-1.3229v6.8791h1.0583v-6.8791l3.4395 1.3229zm-0.52916 44.714v11.906h1.0583v-11.906z" fill="#0ff" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
 </g>
-<path id="nav1-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#f0f" stroke-width=".26458px"/>
-<g id="nav1-course">
-<g id="nav1-deviation" fill="#f0f" stroke="#000" stroke-width=".26458">
+<path id="nav1-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#f0f" stroke-width=".49999" style="paint-order:stroke fill markers"/>
+<g id="nav1-course" style="paint-order:stroke fill markers">
+<g id="nav1-deviation" fill="#f0f" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers">
 <rect x="33.337" y="17.991" width="1.0583" height="31.75" style="paint-order:stroke fill markers"/>
-<path id="nav1-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" style="paint-order:normal"/>
+<path id="nav1-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" style="paint-order:stroke fill markers"/>
 </g>
 <g fill="none" stroke="#fff" stroke-width=".52916">
 <circle cx="48.179" cy="33.866" r="1.1407" style="paint-order:stroke fill markers"/>

@@ -24,8 +24,7 @@ circle, #chevron-line {
   fill: none;
 }
 
-#top *,
-#baseplate * {
+*[stroke] {
   stroke-width: var(--stroke-width);
 }
 

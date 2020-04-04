@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
-     inkscape:cx="112.56568"
-     inkscape:cy="142.44681"
+     inkscape:cx="99.45837"
+     inkscape:cy="132.76142"
      inkscape:document-units="px"
      inkscape:current-layer="heading"
      showgrid="true"
@@ -110,13 +110,13 @@
          inkscape:connector-curvature="0"
          id="nav2-bearing"
          d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
-         style="fill:#00ffff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:stroke fill markers" />
       <g
-         style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001"
+         style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers"
          id="nav2-course"
          inkscape:label="#nav2-course">
         <g
-           style="fill:#00ffff;stroke:#000000;stroke-width:0.26458001"
+           style="fill:#00ffff;stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers"
            inkscape:label="#nav2-deviation"
            id="nav2-deviation">
           <rect
@@ -127,7 +127,7 @@
              x="33.337078"
              y="17.99144" />
           <path
-             style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.26458001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:normal"
+             style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.26458001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:stroke fill markers"
              d="m 31.22044,29.63296 2.6458,-1.05832 2.6458,1.05832 -2.6458,-5.55618 z"
              id="nav2-to"
              inkscape:connector-curvature="0"
@@ -166,18 +166,19 @@
            inkscape:connector-curvature="0" />
       </g>
       <path
-         style="fill:#ff00ff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.4999937;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
          d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
          id="nav1-bearing"
-         inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0"
+         inkscape:label="#nav1-bearing" />
       <g
          inkscape:label="#nav1-course"
          id="nav1-course"
-         style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001">
+         style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers">
         <g
            id="nav1-deviation"
            inkscape:label="#nav1-deviation"
-           style="stroke:#000000;stroke-width:0.26458001">
+           style="stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers">
           <rect
              y="17.99144"
              x="33.337078"
@@ -190,7 +191,7 @@
              inkscape:connector-curvature="0"
              id="nav1-to"
              d="m 31.22044,29.63296 2.6458,-1.05832 2.6458,1.05832 -2.6458,-5.55618 z"
-             style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.26458001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:normal" />
+             style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.26458001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:stroke fill markers" />
         </g>
         <circle
            r="1.1406918"
@@ -545,7 +546,8 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Top"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="top">
       <path
