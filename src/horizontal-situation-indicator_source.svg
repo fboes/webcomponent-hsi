@@ -28,9 +28,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
      inkscape:cx="99.45837"
-     inkscape:cy="132.76142"
+     inkscape:cy="104.47715"
      inkscape:document-units="px"
-     inkscape:current-layer="heading"
+     inkscape:current-layer="baseplate"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
@@ -69,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -82,13 +82,19 @@
     <g
        id="baseplate">
       <rect
-         inkscape:label="#rect817"
+         inkscape:label="#background-outer"
          y="229.26665"
          x="0"
          height="67.73333"
          width="67.73333"
-         id="background"
+         id="background-outer"
          style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         id="background"
+         cx="33.866241"
+         cy="263.1329"
+         r="29.632959" />
       <circle
          r="17.39535"
          cy="263.1329"
@@ -166,7 +172,7 @@
            inkscape:connector-curvature="0" />
       </g>
       <path
-         style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.4999937;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+         style="display:inline;fill:#ff00ff;stroke:#000000;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
          id="nav1-bearing"
          inkscape:connector-curvature="0"

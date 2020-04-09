@@ -3,6 +3,7 @@ template.innerHTML = `
 <style>:host {
 display: inline-block;
 max-width: 100%;
+--background-outer-color: black;
 --background-color: black;
 --foreground-color: white;
 --lubber-color: darkorange;
@@ -26,8 +27,11 @@ fill: none;
 *[stroke] {
 stroke-width: var(--stroke-width);
 }
-#background,
+#background-outer,
 #chevron {
+fill: var(--background-outer-color);
+}
+#background {
 fill: var(--background-color);
 }
 #lubber {
@@ -56,7 +60,8 @@ stroke: var(--background-color);
 }</style><svg width="256" height="256" version="1.1" viewBox="0 0 67.732 67.732" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g transform="translate(0 -229.27)">
 <g id="baseplate">
-<rect id="background" y="229.27" width="67.733" height="67.733" style="paint-order:stroke fill markers"/>
+<rect id="background-outer" y="229.27" width="67.733" height="67.733" style="paint-order:stroke fill markers"/>
+<circle id="background" cx="33.866" cy="263.13" r="29.633" style="paint-order:stroke fill markers"/>
 <circle cx="33.866" cy="263.13" r="17.395" fill="none" stroke="#fff" stroke-width=".74999" style="paint-order:stroke fill markers"/>
 </g>
 </g>

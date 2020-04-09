@@ -1,6 +1,7 @@
 :host {
   display: inline-block;
   max-width: 100%;
+  --background-outer-color: black;
   --background-color: black;
   --foreground-color: white;
   --lubber-color: darkorange;
@@ -28,8 +29,12 @@ circle, #chevron-line {
   stroke-width: var(--stroke-width);
 }
 
-#background,
+#background-outer,
 #chevron {
+  fill: var(--background-outer-color);
+}
+
+#background {
   fill: var(--background-color);
 }
 

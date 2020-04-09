@@ -122,7 +122,8 @@ To change the layout of the HSI component use CSS variables. There is a set of d
 
 ```css
 horizontal-situation-indicator {
-  --background-color: black;
+  --background-outer-color: black;
+  --foreground-color: white;
   --foreground-color: white;
   --lubber-color: darkorange;
   --heading-select-color: cyan;
