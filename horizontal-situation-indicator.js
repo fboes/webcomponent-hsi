@@ -136,6 +136,10 @@ stroke: var(--background-color);
 </g>
 </g>
 <g>
+<g font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+<text id="nav1-label" x="1.7363065" y="5.2254548" fill="#000000" style="line-height:1.25" xml:space="preserve"><tspan x="1.7363065" y="5.2254548" fill="#ff00ff" font-family="sans-serif" font-weight="bold" stroke-width=".26458">NAV1</tspan></text>
+<text id="nav2-label" x="66.047813" y="5.2676091" fill="#00ffff" style="line-height:1.25" xml:space="preserve"><tspan x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">NAV2</tspan></text>
+</g>
 <g id="top">
 <path id="plane" d="m36.247 38.629v-0.52916l-1.8521-1.5875 0.26458-2.1166 3.4395 1.0583v-1.0583l-3.4395-2.6458v-1.5875l-0.52916-1.5875h-0.26501 8.52e-4 -0.26501l-0.52916 1.5875v1.5875l-3.4395 2.6458v1.0583l3.4395-1.0583 0.26458 2.1166-1.8521 1.5875v0.52916l2.3812-0.52916z" fill="#fff"/>
 <path id="path968" d="m65.88 33.866h1.8521" fill="none" stroke="#fff" stroke-width=".49999"/>
@@ -148,8 +152,6 @@ stroke: var(--background-color);
 <use id="use976" transform="rotate(-45 33.866 33.866)" width="100%" height="100%" xlink:href="#use974"/>
 <use id="use978" transform="rotate(-90 33.866 33.866)" width="100%" height="100%" xlink:href="#use976"/>
 <use transform="rotate(45 33.866 33.866)" width="100%" height="100%" xlink:href="#use978"/>
-<text id="nav1-label" x="1.7363065" y="5.2254548" fill="#000000" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="1.7363065" y="5.2254548" fill="#ff00ff" font-family="sans-serif" font-weight="bold" stroke-width=".26458">NAV1</tspan></text>
-<text id="nav2-label" x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="66.047813" y="5.2676091" fill="#00ffff" font-family="sans-serif" font-weight="bold" stroke-width=".26458" text-align="end" text-anchor="end">NAV2</tspan></text>
 </g>
 </g>
 </svg>`;
@@ -158,6 +160,7 @@ class HorizontalSituationIndicator extends HTMLElement {
   static get observedAttributes() {
     return [
       'debug',
+      'fix-north',
       'heading',
       'heading-select',
       'nav1-label',
@@ -187,7 +190,9 @@ class HorizontalSituationIndicator extends HTMLElement {
       'nav2-bearing'
     ];
 
-    this._elements = {};
+    this._elements = {
+      'top': shadowRoot.getElementById('top')
+    };
     this._svg = {
       centerX: 67.733/2,
       centerY: 67.733/2
@@ -235,6 +240,12 @@ class HorizontalSituationIndicator extends HTMLElement {
     this._log('Manipulate stuff via attributeChangedCallback', attrName, newValue);
 
     const matches = this._getStructuredAttributeName(attrName);
+    if (attrName === 'fix-north') {
+      this._log('Switching mode');
+      this._rotateSvgElement(this._elements['top'], 0);
+      this._rotateSvgElement(this._elements['heading'], 0);
+      this.heading = this.heading;
+    }
     const el = this._elements[attrName];
     if (!el) {
       return;
@@ -272,14 +283,18 @@ class HorizontalSituationIndicator extends HTMLElement {
         rotate = this[attrName] > 0 ? 0 : 180;
         break;
       case 'heading':
-        rotate = -this[attrName];
+        if (this['fix-north']) {
+          this._rotateSvgElement(this._elements['top'], this[attrName]);
+        } else {
+          rotate = -this[attrName];
+        }
         break;
       default:
         rotate = this[attrName];
         break;
     }
     if (rotate !== null) {
-      el.setAttribute('transform','rotate(' + [rotate, this._svg.centerX, this._svg.centerY].join(' ') + ')');
+      this._rotateSvgElement(el, rotate);
     }
   }
 
@@ -322,6 +337,10 @@ class HorizontalSituationIndicator extends HTMLElement {
       deg += 360;
     }
     return deg;
+  }
+
+  _rotateSvgElement(element, degrees) {
+    element.setAttribute('transform','rotate(' + [degrees, this._svg.centerX, this._svg.centerY].join(' ') + ')');
   }
 
   _log(...theArgs) {

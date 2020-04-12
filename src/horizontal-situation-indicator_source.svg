@@ -30,7 +30,7 @@
      inkscape:cx="99.45837"
      inkscape:cy="104.47715"
      inkscape:document-units="px"
-     inkscape:current-layer="baseplate"
+     inkscape:current-layer="layer5"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
@@ -552,14 +552,41 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Top"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <g
-       id="top">
+       id="g914">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23328018px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458001"
+         x="1.7363065"
+         y="5.2254548"
+         id="nav1-label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan903"
+           x="1.7363065"
+           y="5.2254548"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff00ff;stroke-width:0.26458001">NAV1</tspan></text>
+      <text
+         id="nav2-label"
+         y="5.2676091"
+         x="66.047813"
+         style="font-style:normal;font-weight:normal;font-size:4.23328018px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.26458001"
+         xml:space="preserve"
+         sodipodi:insensitive="true"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#00ffff;stroke-width:0.26458001"
+           y="5.2676091"
+           x="66.047813"
+           id="tspan907"
+           sodipodi:role="line">NAV2</tspan></text>
+    </g>
+    <g
+       id="top"
+       style="display:inline">
       <path
          inkscape:label="#plane"
          sodipodi:nodetypes="cccccccccccccccccccccc"
-         style="fill:#ffffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="display:inline;fill:#ffffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 36.24746,38.62868 v -0.52916 l -1.85206,-1.58748 0.26458,-2.11664 3.43954,1.05832 V 34.3954 l -3.43954,-2.6458 v -1.58748 l -0.52916,-1.58748 h -0.265006 8.52e-4 -0.265006 l -0.52916,1.58748 v 1.58748 l -3.43954,2.6458 v 1.05832 l 3.43954,-1.05832 0.26458,2.11664 -1.85206,1.58748 v 0.52916 l 2.38122,-0.52916 z"
          id="plane"
          inkscape:connector-curvature="0" />
@@ -568,7 +595,7 @@
          inkscape:connector-curvature="0"
          id="path968"
          d="m 65.88042,33.86624 h 1.85206"
-         style="fill:none;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          inkscape:label="#chevron"
          sodipodi:nodetypes="cccccccc"
@@ -581,13 +608,13 @@
          inkscape:connector-curvature="0"
          id="lubber"
          d="m 33.86624,3.17496 v 5.2916"
-         style="fill:#ff6600;stroke:#ff7f2a;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="display:inline;fill:#ff6600;stroke:#ff7f2a;stroke-width:0.49999371;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="chevron-line"
          d="m 29.63296,1.3229 h 2.38122 L 33.86624,3.17496 35.7183,1.3229 h 2.38122"
-         style="fill:none;stroke:#ffffff;stroke-width:0.39686999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.39686999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <use
          inkscape:transform-center-y="-23.292489"
          height="100%"
@@ -597,7 +624,8 @@
          inkscape:transform-center-x="-23.292489"
          xlink:href="#path968"
          y="0"
-         x="0" />
+         x="0"
+         style="display:inline" />
       <use
          height="100%"
          width="100%"
@@ -607,7 +635,8 @@
          inkscape:transform-center-x="23.292489"
          xlink:href="#use970"
          y="0"
-         x="0" />
+         x="0"
+         style="display:inline" />
       <use
          height="100%"
          width="100%"
@@ -626,7 +655,8 @@
          inkscape:transform-center-x="23.292489"
          xlink:href="#use974"
          y="0"
-         x="0" />
+         x="0"
+         style="display:inline" />
       <use
          inkscape:transform-center-x="-23.292489"
          height="100%"
@@ -636,7 +666,8 @@
          inkscape:transform-center-y="23.292489"
          xlink:href="#use976"
          y="0"
-         x="0" />
+         x="0"
+         style="display:inline" />
       <use
          transform="rotate(45,33.865896,33.86624)"
          height="100%"
@@ -645,31 +676,8 @@
          inkscape:transform-center-y="32.940554"
          xlink:href="#use978"
          y="0"
-         x="0" />
-      <text
-         sodipodi:insensitive="true"
-         id="nav1-label"
-         y="5.2254548"
-         x="1.7363065"
-         style="font-style:normal;font-weight:normal;font-size:4.23328018px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458001"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff00ff;stroke-width:0.26458001"
-           y="5.2254548"
-           x="1.7363065"
-           id="tspan903"
-           sodipodi:role="line">NAV1</tspan></text>
-      <text
-         sodipodi:insensitive="true"
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:4.23328018px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.26458001"
-         x="66.047813"
-         y="5.2676091"
-         id="nav2-label"><tspan
-           sodipodi:role="line"
-           id="tspan907"
-           x="66.047813"
-           y="5.2676091"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:end;text-anchor:end;fill:#00ffff;stroke-width:0.26458001">NAV2</tspan></text>
+         x="0"
+         style="display:inline" />
     </g>
   </g>
 </svg>

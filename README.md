@@ -95,6 +95,7 @@ If a property is not set or unset, the corresponding HSI component will be hidde
 | `nav2-deviation`       | ?`deviation` | `null`  | Only visible when `nav2-course` is set. |
 | `nav2-bearing`         | ?`degree`    | `null`  | This will also set `nav2-to` and `nav2-deviation` accordingly. |
 | `nav2-to`              | ?`switch`    | `null`  | If set to `1` will show the TO-flag, if set to `-1` will show the FROM-flag. |
+| `fix-north`            | ?`switch`    | `null`  | If set to `1` the compass card will be locked to north, while the plane and lubber line rotate. |
 
 Types prefixed with `?` allow setting value to `null` as well.
 

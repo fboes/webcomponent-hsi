@@ -1,6 +1,12 @@
 Changelog
 =========
 
+* Add `fix-north` option
+
+1.2.1
+-----
+
+* Add `--background-outer-color`
 * Add CSS examples
 
 1.2.0
