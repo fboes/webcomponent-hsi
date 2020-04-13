@@ -9,7 +9,9 @@ max-width: 100%;
 --lubber-color: darkorange;
 --heading-select-color: cyan;
 --nav1-color: magenta;
+--nav1-bearing-color: var(--nav1-color);
 --nav2-color: cyan;
+--nav2-bearing-color: var(--nav2-color);
 --stroke-width: 0.5;
 }
 :host[hidden] {
@@ -44,18 +46,24 @@ fill: var(--heading-select-color);
 fill: var(--nav1-color);
 }
 #nav1-course-pointer,
-#nav1-deviation *,
-#nav1-bearing {
+#nav1-deviation * {
 fill: var(--nav1-color);
+stroke: var(--background-color);
+}
+#nav1-bearing {
+fill: var(--nav1-bearing-color);
 stroke: var(--background-color);
 }
 #nav2-label tspan {
 fill: var(--nav2-color);
 }
 #nav2-course-pointer,
-#nav2-deviation *,
-#nav2-bearing {
+#nav2-deviation * {
 fill: var(--nav2-color);
+stroke: var(--background-color);
+}
+#nav2-bearing {
+fill: var(--nav2-bearing-color);
 stroke: var(--background-color);
 }</style><svg width="256" height="256" version="1.1" viewBox="0 0 67.732 67.732" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g transform="translate(0 -229.27)">

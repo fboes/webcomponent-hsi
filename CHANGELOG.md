@@ -1,6 +1,7 @@
 Changelog
 =========
 
+* Add `--nav1-bearing-color` & `--nav2-bearing-color`
 * Add `fix-north` option
 
 1.2.1

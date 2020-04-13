@@ -7,7 +7,9 @@
   --lubber-color: darkorange;
   --heading-select-color: cyan;
   --nav1-color: magenta;
+  --nav1-bearing-color: var(--nav1-color);
   --nav2-color: cyan;
+  --nav2-bearing-color: var(--nav2-color);
   --stroke-width: 0.5;
 }
 :host[hidden] {
@@ -50,9 +52,12 @@ circle, #chevron-line {
   fill: var(--nav1-color);
 }
 #nav1-course-pointer,
-#nav1-deviation *,
-#nav1-bearing {
+#nav1-deviation * {
   fill: var(--nav1-color);
+  stroke: var(--background-color);
+}
+#nav1-bearing {
+  fill: var(--nav1-bearing-color);
   stroke: var(--background-color);
 }
 
@@ -60,9 +65,12 @@ circle, #chevron-line {
   fill: var(--nav2-color);
 }
 #nav2-course-pointer,
-#nav2-deviation *,
-#nav2-bearing {
+#nav2-deviation * {
   fill: var(--nav2-color);
+  stroke: var(--background-color);
+}
+#nav2-bearing {
+  fill: var(--nav2-bearing-color);
   stroke: var(--background-color);
 }
 
