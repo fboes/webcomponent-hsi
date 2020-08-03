@@ -76,11 +76,15 @@ stroke: var(--background-color);
 <g>
 <g id="heading">
 <g stroke="#000">
-<path id="nav2-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#0ff" stroke-width=".26458px" style="paint-order:stroke fill markers"/>
-<g id="nav2-course" style="paint-order:stroke fill markers">
+<path id="nav2-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#0ff" stroke-width=".26458px" style="paint-order:stroke fill markers">
+<title>NAV2 BEARING</title>
+</path>
+<g id="nav2-course" stroke-width=".26458" style="paint-order:stroke fill markers">
+<title>NAV2 COURSE</title>
 <g id="nav2-deviation" fill="#0ff" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers">
-<rect x="33.337" y="17.991" width="1.0583" height="31.75" style="paint-order:stroke fill markers"/>
-<path id="nav2-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" style="paint-order:stroke fill markers"/>
+<title>NAV2 DEVIATION</title>
+<rect x="33.337" y="17.991" width="1.0583" height="31.75" fill="#0ff" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
+<path id="nav2-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" fill="#0ff" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
 </g>
 <g fill="none" stroke="#fff" stroke-width=".52916">
 <circle cx="48.179" cy="33.866" r="1.1407" style="paint-order:stroke fill markers"/>
@@ -90,11 +94,15 @@ stroke: var(--background-color);
 </g>
 <path id="nav2-course-pointer" d="m33.866 5.5562-3.9687 6.3499 3.4395-1.3229v6.8791h1.0583v-6.8791l3.4395 1.3229zm-0.52916 44.714v11.906h1.0583v-11.906z" fill="#0ff" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
 </g>
-<path id="nav1-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#f0f" stroke-width=".49999" style="paint-order:stroke fill markers"/>
-<g id="nav1-course" style="paint-order:stroke fill markers">
-<g id="nav1-deviation" fill="#f0f" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers">
-<rect x="33.337" y="17.991" width="1.0583" height="31.75" style="paint-order:stroke fill markers"/>
-<path id="nav1-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" style="paint-order:stroke fill markers"/>
+<path id="nav1-bearing" d="m33.866 5.5562-3.9687 6.3499 2.6458-1.0583v52.122h2.6458v-52.122l2.6458 1.0583zm0 4.7624 0.79374 0.31729v51.805h-1.5875v-51.805z" fill="#f0f" stroke-width=".49999" style="paint-order:stroke fill markers">
+<title>NAV1 BEARING</title>
+</path>
+<g id="nav1-course" stroke-width=".26458" style="paint-order:stroke fill markers">
+<title>NAV1 COURSE</title>
+<g id="nav1-deviation" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers">
+<title>NAV1 DEVIATION</title>
+<rect x="33.337" y="17.991" width="1.0583" height="31.75" fill="#f0f" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
+<path id="nav1-to" d="m31.22 29.633 2.6458-1.0583 2.6458 1.0583-2.6458-5.5562z" fill="#f0f" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
 </g>
 <g fill="none" stroke="#fff" stroke-width=".52916">
 <circle cx="48.179" cy="33.866" r="1.1407" style="paint-order:stroke fill markers"/>
@@ -105,7 +113,9 @@ stroke: var(--background-color);
 <path id="nav1-course-pointer" d="m33.866 5.5562-3.9687 6.3499 3.4395-1.3229v6.8791h1.0583v-6.8791l3.4395 1.3229zm-0.52916 44.714v11.906h1.0583v-11.906z" fill="#f0f" stroke="#000" stroke-width=".26458" style="paint-order:stroke fill markers"/>
 </g>
 </g>
-<path id="heading-select" d="m32.014 1.3229h-1.5875v2.3812h6.8795l-4.26e-4 -2.3812h-1.5875l-1.8521 1.8521z" fill="#0ff"/>
+<path id="heading-select" d="m32.014 1.3229h-1.5875v2.3812h6.8795l-4.26e-4 -2.3812h-1.5875l-1.8521 1.8521z" fill="#0ff" stroke-width=".26458px">
+<title>HEADING SELECT</title>
+</path>
 <g id="compass-rose">
 <use transform="rotate(-30 33.867 33.866)" width="100%" height="100%" xlink:href="#g1294"/>
 <g fill="#000000" font-family="sans-serif" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
@@ -304,6 +314,7 @@ class HorizontalSituationIndicator extends HTMLElement {
     if (rotate !== null) {
       this._rotateSvgElement(el, rotate);
     }
+    this._setTitle(el, attrName.replace(/-/g, ' ').toUpperCase() + ': ' + this[attrName]+ '°');
   }
 
   connectedCallback() {
@@ -313,6 +324,13 @@ class HorizontalSituationIndicator extends HTMLElement {
   }
 
   disconnectedCallback() {
+  }
+
+  _setTitle(el, title) {
+    const elTitle = el.querySelector('title');
+    if (elTitle) {
+      elTitle.textContent = title;
+    }
   }
 
   _getStructuredAttributeName(attrName) {

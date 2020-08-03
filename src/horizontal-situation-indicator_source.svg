@@ -116,15 +116,19 @@
          inkscape:connector-curvature="0"
          id="nav2-bearing"
          d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
-         style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:stroke fill markers" />
+         style="display:inline;fill:#00ffff;stroke:#000000;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;paint-order:stroke fill markers">
+         <title>NAV2 BEARING</title>
+      </path>
       <g
          style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers"
          id="nav2-course"
          inkscape:label="#nav2-course">
+        <title>NAV2 COURSE</title>
         <g
            style="fill:#00ffff;stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers"
            inkscape:label="#nav2-deviation"
            id="nav2-deviation">
+          <title>NAV2 DEVIATION</title>
           <rect
              style="display:inline;opacity:1;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
              id="rect4756"
@@ -176,15 +180,19 @@
          d="m 33.86624,5.55618 -3.9687,6.34992 2.6458,-1.05832 v 52.12226 h 2.6458 V 10.84778 l 2.6458,1.05832 z m 0,4.76244 0.79374,0.317289 V 62.44088 H 33.0725 V 10.635909 Z"
          id="nav1-bearing"
          inkscape:connector-curvature="0"
-         inkscape:label="#nav1-bearing" />
+         inkscape:label="#nav1-bearing">
+         <title>NAV1 BEARING</title>
+      </path>
       <g
          inkscape:label="#nav1-course"
          id="nav1-course"
          style="display:inline;opacity:1;stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers">
+        <title>NAV1 COURSE</title>
         <g
            id="nav1-deviation"
            inkscape:label="#nav1-deviation"
            style="stroke:#000000;stroke-width:0.26458001;paint-order:stroke fill markers">
+          <title>NAV1 DEVIATION</title>
           <rect
              y="17.99144"
              x="33.337078"
@@ -237,7 +245,9 @@
          inkscape:connector-curvature="0"
          id="heading-select"
          d="M 32.01418,1.3229 H 30.4267 v 2.38122 h 6.879506 L 37.30578,1.3229 H 35.7183 l -1.85206,1.85206 z"
-         style="display:inline;opacity:1;fill:#00ffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="display:inline;opacity:1;fill:#00ffff;stroke:none;stroke-width:0.26458001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
+          <title>HEADING SELECT</title>
+      </path>
       <g
          inkscape:label="#compass-rose"
          id="compass-rose"
