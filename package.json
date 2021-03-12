@@ -33,7 +33,6 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fboes/webcomponent-hsi.git"
