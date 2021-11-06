@@ -1,6 +1,6 @@
 {
   "name": "@fboes/horizontal-situation-indicator",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A Vanilla JavaScript web component which displays a self-contained Horizontal Situation Indicator",
   "main": "horizontal-situation-indicator.js",
   "scripts": {
