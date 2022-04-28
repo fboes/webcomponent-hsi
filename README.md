@@ -5,7 +5,7 @@ A Vanilla JavaScript [web component](https://www.webcomponents.org/) which displ
 
 ![](docs/hsi.png)
 
-For a demo see https://3960.org/webcomponent-hsi/.
+For a demo see https://fboes.github.io/webcomponent-hsi/.
 
 Installation
 ------------
