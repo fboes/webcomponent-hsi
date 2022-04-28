@@ -154,7 +154,6 @@ Development
 -----------
 
 * Run `npm run build` to copy files from `src` directory into main JavaScript file.
-* Run `npm run serve` to launch a development web server.
 * The property `debug="1"` will activate additional output to `console`.
 
 Status
